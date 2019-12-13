@@ -1,6 +1,7 @@
 # coding=utf-8
 import zhcn
 
+
 addons = [
     zhcn.Zhcn(),
 ]

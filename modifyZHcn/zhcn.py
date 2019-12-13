@@ -1,6 +1,6 @@
 # coding=utf-8
-import requests
 import json
+import requests
 
 
 class Zhcn:
@@ -20,7 +20,7 @@ class Zhcn:
             if html.encoding != 'None':
                 html.encoding = ('utf8')
                 text = html.text
-                text = text.replace("畅游星海", "Hello World")
+                text = text.replace("扶墙机场推荐-GLaDOS", "Hello World")
                 # print(html.text)
                 flow.response.set_text(text)
             print('-' * 30)
