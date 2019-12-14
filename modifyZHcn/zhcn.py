@@ -1,15 +1,23 @@
 # coding=utf-8
 import json
 import requests
-
+import mitmproxy
 
 class Zhcn:
     def __init__(self):
         self.num = 0
 
     def response(self, flow) -> None:
+        # if flow.request.host == '91.108.56.190':
+        #     url = flow.request.url
+        #     print(url)
+        #     post1 = flow.response.content
+        #     print(post1)
+        #         # flow.response.set_text(text)
+
         # print(flow.request.url)
         # print(flow.request.host)
+
         if flow.request.host == "www.ackurdeeve.com":
             url = flow.request.url
             print('-' * 30)
