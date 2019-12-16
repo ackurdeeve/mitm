@@ -54,7 +54,6 @@ class Response:
             parsed_json4 = json.loads(text4)
             parsed_json4["free"] = False
             parsed_json4["grammarlyEdu"] = True
-            parsed_json4["subscriptionFree"] = True
             parsed_json4["type"] = "Premium"
             parsed_json4["subscriptionFree"] = False
 

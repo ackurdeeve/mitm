@@ -164,3 +164,4 @@ dev/pyvenv.cfg
 /dev/Scripts/python.exe
 /dev/Scripts/pythonw.exe
 /dev/pyvenv.cfg
+/.vscode/
