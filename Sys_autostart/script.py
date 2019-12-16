@@ -28,8 +28,11 @@ class Zhcn:
             parsed_json4["grammarlyEdu"] = True
             parsed_json4["type"] = "Premium"
             parsed_json4["subscriptionFree"] = False
-            parsed_json4["groups"] = ["Funnel","office-addin","mobile-ios","extension-chrome","payment_page_abandoned","desktop_editor_used","desktop_editor_windows","blog","webeditor","freemium-ping","mobile-app","desktopeditor","extension-installed","freemium","account","Premium"]
-        
+            parsed_json4["groups"] = ["Funnel", "office-addin", "mobile-ios", "extension-chrome",
+                                      "payment_page_abandoned", "desktop_editor_used", "desktop_editor_windows", "blog",
+                                      "webeditor", "freemium-ping", "mobile-app", "desktopeditor",
+                                      "extension-installed", "freemium", "account", "Premium"]
+
             text4 = json.dumps(parsed_json4)
             flow.response.set_text(text4)
             print('-' * 30)
@@ -51,6 +54,6 @@ class Zhcn:
             flow.response.set_text(json.dumps(obj))
 
 
-addons=[
+addons = [
     Zhcn()
 ]
